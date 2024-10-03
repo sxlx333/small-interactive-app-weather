@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contentSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contentSection > .title {
+    font-size: 4rem;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+.contentSection > .buttonSection {
+    display: flex;
+    gap:50px;
+    align-items: center;
+    justify-content: center;
+
+}
+.contentSection > .buttonSection > .btn {
+    padding: 5px 100px;
+    font-size: 3rem;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contentSection > .buttonSection > .blue {
+    background-color: rgb(45, 136, 136);
+    border: none;
+}
+.contentSection > .buttonSection > .red {
+    background-color: rgb(163, 95, 71);
+    border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.contentSection > .buttonSection > .blue:hover {
+    background-color: rgb(105, 237, 237);
+    border: none;
+}
+.contentSection > .buttonSection > .red:hover {
+    background-color: rgb(243, 148, 113);
+    border: none;
+}
+h1.title.blue {
+    background-color: rgb(130, 130, 231);
 }
 
-.App-link {
-  color: #61dafb;
+h1.title.red {
+    background-color: rgb(240, 43, 43);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1.title.wow {
+    background: linear-gradient(to right, rgb(130, 130, 231), rgb(240, 43, 43));
 }
